@@ -46,11 +46,11 @@ body {
   --card-border-radius: 6px;
 }
 
-header {
+/* header {
   width: 100%;
   background: var(--nav-bg-ff);
   border-bottom: var(--borders);
-}
+} */
 
 nav {
   margin: 10px;
@@ -71,7 +71,7 @@ h2 {
   font-size: var(--font-xl);
 }
 
-nav a {
+/* nav a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 600;
@@ -103,7 +103,7 @@ nav li {
   display: flex;
   align-items: center;
   margin: 20px;
-}
+} */
 
 .btn {
   font-size: var(--font-l);

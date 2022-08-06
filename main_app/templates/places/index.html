@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/places/index.css' %}">
 
 <div id='map' style='width: 800px; height: 600px;'></div>
 <script>
