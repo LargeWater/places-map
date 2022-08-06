@@ -1,8 +1,14 @@
-<div id='map' style='width: 400px; height: 300px;'></div>
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id='map' style='width: 800px; height: 600px;'></div>
 <script>
-  mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
+  mapboxgl.accessToken = 'pk.eyJ1IjoibGFyZ2V3YXRlciIsImEiOiJjbDZoOTAwZWkweWNjM2JvYThnbm03YjMzIn0.r11MoNzvczr0RUCDmi9brQ';
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11'
   });
 </script>
+
+{% endblock %}
