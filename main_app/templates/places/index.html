@@ -4,13 +4,24 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/places/index.css' %}">
 
+
 <div id='map' style='width: 1400px; height: 1000px;'></div>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoibGFyZ2V3YXRlciIsImEiOiJjbDZoOTAwZWkweWNjM2JvYThnbm03YjMzIn0.r11MoNzvczr0RUCDmi9brQ';
-  var map = new mapboxgl.Map({
+  const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11'
+    style: 'mapbox://styles/mapbox/streets-v11',
+    zoom: 2,
+    center: [18.972889204789812, 18.491862350201767]
   });
 </script>
+{% for place in places %}
+<script>
+var marker = new mapboxgl.Marker()
+.setLngLat([{{ place.lng }}, {{ place.lat }}])
+.setPopup(new mapboxgl.Popup().setHTML("<p>{{ place.address }}</p><p>created by {{ place.user }}</p>"))
+.addTo(map);
+</script>
+{% endfor %}
 
 {% endblock %}

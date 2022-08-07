@@ -4,8 +4,8 @@
 ## Getting Started
 
 ## Technologies Used
-- [Mapbox](https://www.mapbox.com/)
-- [Geocoder](https://geocoder.readthedocs.io/)
+- [Mapbox](https://www.mapbox.com/) - API for creating maps and adding markers to them
+- [Geocoder](https://geocoder.readthedocs.io/) - package for geocoding addresses, converting plain text locations into latitude and longitude coordinates
 - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 - ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 - ![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
