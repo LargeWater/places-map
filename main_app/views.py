@@ -36,7 +36,6 @@ class PlaceList(LoginRequiredMixin, ListView):
   model = Place
   template_name = 'places/list.html'
   context_object_name = 'places'
-  paginate_by = 5
 
 def home(request):
   return render(request, 'home.html')
