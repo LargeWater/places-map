@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/places/place-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="place-container">
+  <div class="">
+  </div>
+  <div class="place-details">
+    <h1>{{ place.address }}</h1>
+      <h2>{{ place.lat}}, {{ place.lng }}</h2>
+      <h2>This place was created by {{ place.user }}</h2>
+      {% if user == place.user %}
+      <div class="cat-actions">
+        <a href="{% url 'places_update' place.id %}" class="btn warn">Edit</a>
+        <a href="{% url 'places_delete' place.id %}" class="btn danger">Delete</a>
+      </div>
+      {% endif %}
+  </div>
+</section>
+
+{% endblock %}

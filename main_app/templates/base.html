@@ -44,21 +44,36 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="{% url 'home' %}">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="{% url 'about' %}">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="{% url 'places_create' %}">Add a Place</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/places/index">Map</a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link active' href='/places/list'>Place List</a>
-            </li>
+            {% if user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'places_create' %}">Add a Place</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/places/index">Map</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link active' href='/places/list'>Place List</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link active' href={% url 'logout' %}>Logout</a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'home' %}">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'signup' %}">Sign up</a>
+              </li>
+            {% endif %}
           </ul>
         </div>
       </div>
