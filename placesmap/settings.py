@@ -132,7 +132,7 @@ STATIC_URL = 'static/'
 
 LOGIN_URL = 'home'
 
-LOGIN_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = 'home'
 
 LOGOUT_REDIRECT_URL = 'home'
 
