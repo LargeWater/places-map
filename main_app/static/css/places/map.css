@@ -4,3 +4,12 @@ main{
   display: flex;
   margin-top: 50px;
 }
+a {
+  text-decoration: none;
+  border: none;
+}
+
+.mapboxgl-popup-content {
+  text-decoration: none;
+  border: none;
+}
