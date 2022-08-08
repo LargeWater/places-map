@@ -1,4 +1,8 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
 
 {% block content %}
 
@@ -6,6 +10,9 @@
 <hr />
 <p class="page-content">
   places.map() is an app in which you mark your favorite places on a map, and see the markers other users have placed.
+</p>
+<p class="page-content">
+  places.map() uses the <a href="https://www.mapbox.com/" target='_blank'>Mapbox API</a> to display a map and to place markers, and uses <a href="https://geocoder.readthedocs.io/" target="_blank">Geocoder</a> to convert your plain text input into latitude and longitude coordinates. <br /> be aware that it may get your location wrong, as it includes businesses as well as cities and towns.
 </p>
 
 {% endblock %}

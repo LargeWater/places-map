@@ -9,6 +9,7 @@ mapbox_access_token = 'pk.eyJ1IjoibGFyZ2V3YXRlciIsImEiOiJjbDZoOTAwZWkweWNjM2JvYT
 
 class Place(models.Model):
   address = models.TextField()
+  description = models.TextField()
   lat = models.FloatField(blank=True, null=True)
   lng = models.FloatField(blank=True, null=True)
   user = models.ForeignKey(User, on_delete=models.CASCADE)

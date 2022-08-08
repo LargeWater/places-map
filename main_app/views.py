@@ -11,7 +11,7 @@ from .models import Place
 
 class PlaceCreate(LoginRequiredMixin, CreateView):
   model = Place
-  fields = ['address']
+  fields = ['address', 'description']
   success_url = '/places/map/'
 
   def form_valid(self, form):
@@ -26,7 +26,7 @@ class PlaceCreate(LoginRequiredMixin, CreateView):
 
 class PlaceUpdate(LoginRequiredMixin, UpdateView):
   model = Place
-  fields = ['address']
+  fields = ['address', 'description']
 
 class PlaceDelete(LoginRequiredMixin, DeleteView):
   model = Place

@@ -19,7 +19,7 @@
 <script>
 var marker = new mapboxgl.Marker()
 .setLngLat([{{ place.lng }}, {{ place.lat }}])
-.setPopup(new mapboxgl.Popup().setHTML('<p>{{ place.address }}</p><p>created by {{ place.user }}</p><p><a href ="/places/{{ place.id }}">details</p>'))
+.setPopup(new mapboxgl.Popup().setHTML('<p>{{ place.address }}</p><p>{{ place.lat }}, {{ place.lng }}</p><p>{{ place. description }}</p><p>created by {{ place.user }}</p><p><a href ="/places/{{ place.id }}">details</p>'))
 .addTo(map);
 </script>
 {% endfor %}

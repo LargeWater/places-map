@@ -15,8 +15,9 @@
 <div class="card" style="width: 18rem;">
   <a href ="/places/{{ place.id }}">
     <div class="card-body">
-      <h5 class="card-title">{{ place.address }}</h5>
+      <h4 class="card-title">{{ place.address }}</h4>
       <h6 class="card-subtitle mb-2 text-muted">{{ place.lat }}, {{ place.lng }}</h6>
+      <h5 class="card-title">{{ place.description }}</h5>
       <p class="card-text">This location was created by {{ place.user }}</p>
     </div>
   </a>
