@@ -31,7 +31,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'TRUE'
+DEBUG = env('DEBUG') == 'True' 
 
 ALLOWED_HOSTS = []
 
