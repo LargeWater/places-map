@@ -12,7 +12,7 @@ from .models import Place
 class PlaceCreate(LoginRequiredMixin, CreateView):
   model = Place
   fields = ['address']
-  success_url = '/places/index/'
+  success_url = '/places/map/'
 
   def form_valid(self, form):
     form.instance.user = self.request.user
@@ -30,7 +30,7 @@ class PlaceUpdate(LoginRequiredMixin, UpdateView):
 
 class PlaceDelete(LoginRequiredMixin, DeleteView):
   model = Place
-  success_url = '/places/index/'
+  success_url = '/places/map/'
 
 class PlaceList(LoginRequiredMixin, ListView):
   model = Place
