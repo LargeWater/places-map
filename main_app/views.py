@@ -45,9 +45,9 @@ def about(request):
   return render(request, 'about.html')
 
 @login_required
-def index(request):
+def map(request):
   places = Place.objects.all()
-  return render(request, 'places/index.html', { 'places': places })
+  return render(request, 'places/map.html', { 'places': places })
 
 
 def signup(request):
