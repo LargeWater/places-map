@@ -27,6 +27,7 @@ class PlaceCreate(LoginRequiredMixin, CreateView):
 class PlaceUpdate(LoginRequiredMixin, UpdateView):
   model = Place
   fields = ['address', 'description']
+  success_url = '/places/map/'
 
 class PlaceDelete(LoginRequiredMixin, DeleteView):
   model = Place
