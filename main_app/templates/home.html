@@ -6,9 +6,12 @@
 {% block content %}
 
 <h1>welcome to places.map()</h1>
+
+{% if user.is_authenticated %}
 <h2>let's get mapping</h2>
 <h2>look at the <a href="/places/map">map</a> to see what's already been added</h2>
 <h2>or, <a href="{% url 'places_create' %}">add a place</a></h2>
+{% endif %}
 
 {% if not user.is_authenticated %}
   <section>
