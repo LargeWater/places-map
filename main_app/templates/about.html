@@ -12,8 +12,18 @@
   places.map() is an app in which you mark your favorite places on a map, and see the markers other users have placed.
 </p>
 <p class="page-content">
-  places.map() uses the <a href="https://www.mapbox.com/" target='_blank'>Mapbox API</a> to display a map and to place markers, and uses <a href="https://geocoder.readthedocs.io/" target="_blank">Geocoder</a> to convert your plain text input into latitude and longitude coordinates. <br /> be aware that it may get your location wrong, as it includes businesses as well as cities and towns.
+  places.map() uses the <a href="https://www.mapbox.com/" target='_blank'>Mapbox API</a> to display a map and to place markers, and uses <a href="https://geocoder.readthedocs.io/" target="_blank">Geocoder</a> to convert your plain text input into latitude and longitude coordinates. 
 </p>
-<img src="{% static 'images/screenshot.png' %}" id='about-img' >
+<br />
+<p>
+  place.map() also has a search feature, which you can use to find the places you want to mark. it's helpful, considering the geocoder can sometimes return odd results, as it doesn't just include geographical locations, but businesses as well. best to check in the search bar before adding on the form, just to make sure.
+</p>
+<img src="{% static 'images/search.png' %}" id='about-img' >
+<br />
+<br />
+<p>
+  there is also a directions feature, which you can use to find the route between two places. click on a step to zoom in and see it up close.
+</p>
+<img src="{% static 'images/directions.png' %}" id='about-img' >
 
 {% endblock %}

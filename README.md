@@ -1,6 +1,6 @@
 # places.map()
 ### a Django app for adding places to a map
-![Screenshot](main_app/static/images/readme-screenshot.png)
+![Screenshot](main_app/static/images/rmscreenshot.png)
 
 ## Features:
 - View a map of all user added places
