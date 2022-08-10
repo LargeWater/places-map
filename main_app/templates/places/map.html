@@ -5,20 +5,21 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/places/map.css' %}">
 
 
-<div id='map' style='width: 100%; height: 1000px;'></div>
+<div id='map' style='width: 100vw; height: 91vh;'></div>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoibGFyZ2V3YXRlciIsImEiOiJjbDZoOTAwZWkweWNjM2JvYThnbm03YjMzIn0.r11MoNzvczr0RUCDmi9brQ';
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
-    zoom: 3,
+    zoom: 2,
     center: [1, 1],
     projection: 'globe'
   });
   var directions = new MapboxDirections({
     accessToken: mapboxgl.accessToken,
     unit: 'imperial',
-    profile: 'mapbox/driving'
+    profile: 'mapbox/driving',
+    interactive: false,
   });
   map.addControl(directions, 'top-left');
   const nav = new mapboxgl.NavigationControl();

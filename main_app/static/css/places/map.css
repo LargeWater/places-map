@@ -2,7 +2,7 @@ main{
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-top: 50px;
+  margin-top: 0;
 }
 a {
   text-decoration: none;

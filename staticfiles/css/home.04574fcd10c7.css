@@ -1,0 +1,8 @@
+main{
+  font-size: var(--font-l);
+  text-align: center;
+}
+
+h1{
+  margin: 2%;
+}
