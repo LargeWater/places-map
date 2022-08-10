@@ -24,6 +24,12 @@
   map.addControl(directions, 'top-left');
   const nav = new mapboxgl.NavigationControl();
   map.addControl(nav, 'top-right');
+  map.addControl(
+    new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl: mapboxgl
+    })
+  );
 </script>
 {% for place in places %}
 <script>

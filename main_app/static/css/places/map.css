@@ -13,3 +13,9 @@ a {
   text-decoration: none;
   border: none;
 }
+
+.mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
+  padding: 0 40px 0 20px;
+  /* margin: 0; */
+}
+
