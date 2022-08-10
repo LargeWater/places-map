@@ -77,9 +77,23 @@
   margin: 5px 0;
 }
 
-.btn{
-  border: 1px solid black;
+.btn {
+  align-self: center;
+  border: 2px solid black;
+  font-size: 2ch;
+  background-color: #e4ecc2;
+  margin: 5px;
+  padding: 5px 15px;
 }
+
+.place-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 
 

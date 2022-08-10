@@ -30,6 +30,25 @@
       mapboxgl: mapboxgl
     })
   );
+  map.on('load', () => {
+    // Set the default atmosphere style
+    map.setFog({
+      "range": [-20, -5],
+      "color": "#c7d5d9",
+      "horizon-blend": 0.02,
+      "star-intensity": 1
+    });
+  });
+  {% comment %} map.addSource('mapbox-dem', {
+    'type': 'raster-dem',
+    'url': 'mapbox://mapbox.terrain-rgb',
+    'tileSize': 512,
+    'maxzoom': 14
+    });
+    map.setTerrain({
+    'source': 'mapbox-dem',
+    'exaggeration': 1.5
+    }); {% endcomment %}
 </script>
 {% for place in places %}
 <script>
