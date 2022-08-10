@@ -77,51 +77,14 @@
   margin: 5px 0;
 }
 
-.feedings-toy-container > section {
-  width: 80%;
-  min-width: 360px;
-  border: var(--borders);
-  border-radius: var(--card-border-radius);
-  padding: 10px;
-  box-shadow: var(--card-box-shadow);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.subsection-title img {
-  height: 42px;
-  margin-left: 8px;
-}
-
-.subsection-title img:first-of-type {
-  margin-left: 16px;
+.btn{
+  border: 1px solid black;
 }
 
 
 
-.subsection-content p,
-.subsection-content input,
-.subsection-content select {
-  font-size: var(--font-l);
-}
-
-.subsection-content input,
-.subsection-content select {
-  margin-left: 5px;
-  padding: 3px;
-}
 
 
-#file-input {
-  overflow: hidden;
-  position: absolute;
-  width: 0.1px;
-  height: 0.1px;
-}
 
-#file-name {
-  margin-bottom: 10px;
-}
+
 

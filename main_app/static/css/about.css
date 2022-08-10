@@ -12,3 +12,8 @@ h1{
   margin-left: 4%;
   margin-right: 4%;
 }
+
+#about-img{
+  width: 100vw;
+  height: auto;
+}

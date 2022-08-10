@@ -19,7 +19,7 @@
       <h2>{{ place.lat}}, {{ place.lng }}</h2>
       <h2>This place was created by {{ place.user }}</h2>
       {% if user == place.user %}
-      <div class="cat-actions">
+      <div class="place-actions">
         <a href="{% url 'places_update' place.id %}" class="btn warn">Edit</a>
         <a href="{% url 'places_delete' place.id %}" class="btn danger">Delete</a>
       </div>

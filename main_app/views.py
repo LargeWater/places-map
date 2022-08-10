@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import ListView, DetailView
+# from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Place
 
@@ -33,10 +33,6 @@ class PlaceDelete(LoginRequiredMixin, DeleteView):
   model = Place
   success_url = '/places/map/'
 
-class PlaceList(LoginRequiredMixin, ListView):
-  model = Place
-  template_name = 'places/list.html'
-  context_object_name = 'places'
 
 def home(request):
   return render(request, 'home.html')
