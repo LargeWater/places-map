@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/places/map.css' %}">
 
 
-<div id='map' style='width: 100vw; height: 91vh;'></div>
+<div id='map' style='width: 100vw; height: 95vh;'></div>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoibGFyZ2V3YXRlciIsImEiOiJjbDZoOTAwZWkweWNjM2JvYThnbm03YjMzIn0.r11MoNzvczr0RUCDmi9brQ';
   const map = new mapboxgl.Map({
@@ -31,7 +31,6 @@
     })
   );
   map.on('load', () => {
-    // Set the default atmosphere style
     map.setFog({
       "range": [-20, -5],
       "color": "#c7d5d9",
@@ -39,16 +38,6 @@
       "star-intensity": 1
     });
   });
-  {% comment %} map.addSource('mapbox-dem', {
-    'type': 'raster-dem',
-    'url': 'mapbox://mapbox.terrain-rgb',
-    'tileSize': 512,
-    'maxzoom': 14
-    });
-    map.setTerrain({
-    'source': 'mapbox-dem',
-    'exaggeration': 1.5
-    }); {% endcomment %}
 </script>
 {% for place in places %}
 <script>

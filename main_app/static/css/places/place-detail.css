@@ -93,6 +93,11 @@
   justify-content: center;
 }
 
+.btn:hover{
+  background-color: #5c98d1;
+  color:antiquewhite;
+}
+
 
 
 

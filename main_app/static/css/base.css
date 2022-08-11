@@ -133,7 +133,7 @@ nav li {
 } */
 
 
-.navbar-light:hover .navbar-nav:hover .nav-link.active:hover, .navbar-light .navbar-nav .show>.nav-link:hover{
+.navbar-dark:hover, .navbar-nav:hover, .nav-link.active:hover, .navbar-dark .navbar-nav .show>.nav-link:hover{
   color: #5c98d1;
 }
 
@@ -144,4 +144,8 @@ nav li {
 
 body{
   font-family: 'Mulish', sans-serif;
+}
+
+.nav-link.active:hover{
+  color: #5c98d1;
 }

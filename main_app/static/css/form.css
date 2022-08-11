@@ -46,3 +46,7 @@ td > textarea {
   margin: 5px;
   padding: 5px 15px;
 }
+.btn:hover{
+  background-color: #5c98d1;
+  color:antiquewhite;
+}
